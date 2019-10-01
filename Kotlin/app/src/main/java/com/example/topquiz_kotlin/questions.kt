@@ -2,8 +2,7 @@ package com.example.topquiz_kotlin
 
 import com.example.topquiz_kotlin.models.Question
 
-
-val questions = mutableListOf(
+val questionList = arrayOf(
     Question(
         "Who is the creator of Android?",
         mutableListOf("Andy Rubin", "Steve Wozniak", "Dave Rubin", "Jake Wharton"),
@@ -19,5 +18,6 @@ val questions = mutableListOf(
         mutableListOf("42", "101", "666", "742"),
         3
     )
-
 )
+
+
