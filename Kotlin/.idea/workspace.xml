@@ -34,14 +34,14 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.2562321">
+    <splitter split-orientation="horizontal" split-proportion="0.2676747">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/controllers/GameActivity.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="163">
-                  <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+                <state relative-caret-position="1134">
+                  <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
                   <folding>
                     <element signature="e#48#610#0" expanded="true" />
                   </folding>
@@ -58,8 +58,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/controllers/MainActivity.kt">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="439">
-                      <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+                    <state relative-caret-position="468">
+                      <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
                       <folding>
                         <element signature="e#48#538#0" expanded="true" />
                       </folding>
@@ -74,10 +74,10 @@
               <split-first>
                 <leaf>
                   <file pinned="false" current-in-tab="true">
-                    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/questions.kt">
+                    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/public/questions.kt">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="360">
-                          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+                        <state relative-caret-position="414">
+                          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
                         </state>
                       </provider>
                     </entry>
@@ -152,6 +152,7 @@
     <findStrings>
       <find>set</find>
       <find>finish</find>
+      <find>request</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -162,9 +163,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/models/Question.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/questions.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/models/QuestionBank.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/const.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/public/const.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/controllers/GameActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/models/QuestionBank.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/controllers/MainActivity.kt" />
       </list>
     </option>
@@ -275,6 +277,18 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="topquiz_kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TopQuiz-kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_TopQuiz-kotlin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -302,6 +316,7 @@
       <recent name="com.example.topquiz_kotlin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/public" />
       <recent name="$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin" />
     </key>
   </component>
@@ -454,6 +469,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/const.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/public/const.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/controllers/GameActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+          <folding>
+            <element signature="e#48#610#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/models/User.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -475,34 +514,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/questions.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/public/questions.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/const.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/controllers/GameActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-          <folding>
-            <element signature="e#48#610#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="414">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/topquiz_kotlin/controllers/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="468">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
           <folding>
             <element signature="e#48#538#0" expanded="true" />
           </folding>

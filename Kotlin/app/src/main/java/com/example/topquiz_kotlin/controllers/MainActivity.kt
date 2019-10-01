@@ -15,8 +15,6 @@ import com.example.topquiz_kotlin.R
 import com.example.topquiz_kotlin.models.User
 import kotlinx.android.synthetic.main.activity_main.*
 
-const val GAME_ACTIVITY_REQUEST_CODE = 1
-const val FIRST_NAME = "First name"
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,6 +22,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var nameInput: EditText
     private lateinit var playButton: Button
     private lateinit var user: User
+
+    companion object { // ~ Java's static final field
+        const val REQUEST_CODE = 2
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,8 +35,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (Activity.RESULT_OK == resultCode && requestCode == GAME_ACTIVITY_REQUEST_CODE) {
-            //
+        if (Activity.RESULT_OK == resultCode && requestCode == GameActivity.REQUEST_CODE) {
+            data?.getIntExtra(GameActivity.BUNDLE_EXTRA_SCORE, 0)
         }
     }
 
@@ -54,14 +56,12 @@ class MainActivity : AppCompatActivity() {
                 playButton.isClickable = s?.length != 0
             }
         })
-        playButton.setOnClickListener({
+
+        playButton.setOnClickListener {
             user = User(nameInput.text.toString())
             val preferences: SharedPreferences = getPreferences(Context.MODE_PRIVATE)
-            preferences.edit().putString(FIRST_NAME, user.firstName).apply()
+            preferences.edit().putString("First name", user.firstName).apply()
             startActivityForResult(Intent(this, GameActivity::class.java), 1)
-        })
+        }
     }
-
-
-
 }

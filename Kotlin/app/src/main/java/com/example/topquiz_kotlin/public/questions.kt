@@ -1,4 +1,4 @@
-package com.example.topquiz_kotlin
+package com.example.topquiz_kotlin.public
 
 import com.example.topquiz_kotlin.models.Question
 

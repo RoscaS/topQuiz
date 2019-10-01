@@ -14,10 +14,9 @@ import com.example.topquiz_kotlin.R
 import com.example.topquiz_kotlin.models.QuestionBank
 import kotlinx.android.synthetic.main.activity_game.*
 
-const val BUNDLE_EXTRA_SCORE = "BUNDLE_EXTRA_SCORE"
-
 
 class GameActivity : AppCompatActivity(), View.OnClickListener {
+
     private val questionBank = QuestionBank()
     private lateinit var buttons: Array<Button>
     private lateinit var questionText: TextView
@@ -26,6 +25,10 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
     private var rounds = 3
     private var score = 0
 
+    companion object { // ~ Java's static final field
+        const val BUNDLE_EXTRA_SCORE = "BUNDLE_EXTRA_SCORE"
+        const val REQUEST_CODE = 1
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +37,7 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        val tag = v?.getTag() as Int
+        val tag = v?.tag as Int
         computeAnswer(tag)
         if (--rounds == 0) endGame()
         else displayQuestion()
@@ -73,7 +76,7 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun endGame() {
         val onClickAction = { dialog: DialogInterface, which: Int ->
-            Intent().putExtra("BUNDLE_EXTRA_SCORE", score)
+            Intent().putExtra(BUNDLE_EXTRA_SCORE, score)
             setResult(Activity.RESULT_OK, intent)
             finish()
         }

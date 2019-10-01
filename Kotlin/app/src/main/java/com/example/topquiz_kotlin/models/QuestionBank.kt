@@ -1,17 +1,17 @@
 package com.example.topquiz_kotlin.models
-import com.example.topquiz_kotlin.questionList
+import com.example.topquiz_kotlin.public.questionList
 
-class QuestionBank() {
+class QuestionBank {
     private var nextQuestionIdx = 0
     private val questions = mutableListOf(*questionList)
 
     init {
-        questions.shuffle();
+        questions.shuffle()
     }
 
     fun getQuestion() : Question {
         if (nextQuestionIdx == questions.size) nextQuestionIdx = 0
-        return questions.get(nextQuestionIdx++)
+        return questions[nextQuestionIdx++]
     }
 }
 
